@@ -16,12 +16,3 @@ echo "Current version id $VER"
 # Do Install
 cd $OS
 exec ./${OS}_${VER}.sh
-
-#Show Result
-echo 'Administrator Information'
-echo 'MySQL User: root'
-echo 'MySQL Pass: sksks'
-echo 'Admin User: root'
-echo 'Admin Pass: sksks'
-echo 'AJC Config at /home/AJC/ajcserver/config.py'
-echo 'Alxw Config at /var/www/html/alxwvj/{Config.Daemon.php,Config.php}'

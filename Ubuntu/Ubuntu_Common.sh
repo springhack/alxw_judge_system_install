@@ -4,6 +4,10 @@
 sudo rm -rvf /var/www/html/alxwvj/* 2>/dev/null
 sudo mkdir -p /var/www/html/alxwvj
 
+# Try Stop Service
+sudo /etc/init.d/alxwd stop 1>/dev/null 2>&1
+sudo /etc/init.d/ajcd stop 1>/dev/null 2>&1
+
 # Clone Code
 git clone https://github.com/springhack/alxw_judge_system_v1
 git clone https://github.com/springhack/alxw_judge_core
@@ -61,5 +65,15 @@ sleep 3
 sudo /etc/init.d/alxwd start
 sudo /etc/init.d/ajcd start
 
+#Show Result
+echo 'Administrator Information'
+echo 'MySQL User: root'
+echo 'MySQL Pass: sksks'
+echo 'Admin User: root'
+echo 'Admin Pass: sksks'
+echo 'AJC Config at /home/AJC/ajcserver/config.py'
+echo 'Alxw Config at /var/www/html/alxwvj/{Config.Daemon.php,Config.php}'
+
 # Hello World
 echo 'Enjoy it via http://localhost/alxwvj/ !'
+
