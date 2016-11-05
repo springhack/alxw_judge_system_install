@@ -66,7 +66,7 @@ sudo /etc/init.d/alxwd start
 sudo /etc/init.d/ajcd start
 
 #Show Result
-echo -e '\e[40m\n\n'
+echo -e '\e\033[41;37m\n\n'
 echo ' * Administrator Information:'
 echo '    MySQL User: root'
 echo '    MySQL Pass: sksks'
