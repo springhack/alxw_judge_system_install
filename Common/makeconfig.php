@@ -24,7 +24,7 @@
         return addslashes($arr);
     }
 
-    require_once('/var/www/html/alxwvj/Config.Daemon.php');
+    require_once($argv[1]);
 
     $conf['OJ_LIST'][] = 'AJC';
 
@@ -39,7 +39,7 @@
 
     $code .= '?>'.PHP_EOL;
 
-    file_put_contents('/var/www/html/alxwvj/Config.Daemon.php', $code);
+    file_put_contents($argv[1], $code);
 
     echo 'Make change of AJC'.PHP_EOL;
 
