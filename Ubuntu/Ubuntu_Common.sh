@@ -18,6 +18,7 @@ cd ..
 cd alxw_judge_system_v1
 git pull
 sudo cp -rvf ./* /var/www/html/alxwvj/
+sudo cp -rvf ./.htaccess /var/www/html/alxwvj/
 cd ..
 
 cd alxw_judge_core
