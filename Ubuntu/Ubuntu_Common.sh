@@ -22,7 +22,7 @@ cd ..
 cd alxw_judge_system_v1
 git pull
 sudo cp -rvf ./* /var/www/html/alxwvj/
-sudo cp -rvf ./.htaccess /var/www/html/alxwvj/
+sudo cp -rvf ./system/.htaccess /var/www/html/alxwvj/system/
 cd ..
 
 cd alxw_judge_core
@@ -30,7 +30,7 @@ git pull
 sudo ./Install.sh install
 cd ..
 
-sudo cp /var/www/html/alxwvj/classes/alxwd /etc/init.d/alxwd
+sudo cp /var/www/html/alxwvj/system/classes/alxwd /etc/init.d/alxwd
 
 # Change Permission
 sudo chown -R www-data:www-data /var/www/html/alxwvj
@@ -42,7 +42,7 @@ sudo php ../Common/makeconfig.php /var/www/html/alxwvj/Config.Daemon.php
 sudo a2enmod rewrite
 echo 'Change apache config'
 sudo sed -i 's/AllowOverride\ None/AllowOverride\ All/g' /etc/apache2/apache2.conf
-sudo sed -i 's/\/home\/wwwroot\/default\/classes\/Server.php/\/var\/www\/html\/alxwvj\/classes\/Server.php/g' /etc/init.d/alxwd
+# sudo sed -i 's/\/home\/wwwroot\/default\/classes\/Server.php/\/var\/www\/html\/alxwvj\/classes\/Server.php/g' /etc/init.d/alxwd
 
 # Start services
 sudo /etc/init.d/mysql restart
