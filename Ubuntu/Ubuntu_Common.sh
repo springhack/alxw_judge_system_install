@@ -14,10 +14,10 @@ git clone https://github.com/springhack/alxw_judge_core
 git clone https://github.com/springhack/Lo-runner
 
 # Compile Code And Install
-cd Lo-runner
-git pull
-sudo ./setup.py install
-cd ..
+# cd Lo-runner
+# git pull
+# sudo ./setup.py install
+# cd ..
 
 cd alxw_judge_system_v1
 git pull
@@ -49,11 +49,11 @@ sudo /etc/init.d/mysql restart
 sudo /etc/init.d/apache2 restart
 
 # Visit to create database
-curl http://127.0.0.1/alxwvj/Install.php  1>/dev/null 2>&1
-curl http://127.0.0.1/alxwvj/index.php  1>/dev/null 2>&1
-curl http://127.0.0.1/alxwvj/contest.php  1>/dev/null 2>&1
-curl http://127.0.0.1/alxwvj/status.php  1>/dev/null 2>&1
-curl http://127.0.0.1/alxwvj/index.php  1>/dev/null 2>&1
+curl http://127.0.0.1/alxwvj/system/Install.php  1>/dev/null 2>&1
+curl http://127.0.0.1/alxwvj/system/index.php  1>/dev/null 2>&1
+curl http://127.0.0.1/alxwvj/system/contest.php  1>/dev/null 2>&1
+curl http://127.0.0.1/alxwvj/system/status.php  1>/dev/null 2>&1
+curl http://127.0.0.1/alxwvj/system/index.php  1>/dev/null 2>&1
 
 # Start services
 sudo /etc/init.d/mysql restart
