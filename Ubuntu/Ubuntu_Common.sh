@@ -11,7 +11,7 @@ sudo /etc/init.d/ajcd stop 1>/dev/null 2>&1
 # Clone Code
 git clone https://github.com/springhack/alxw_judge_system_v1
 git clone https://github.com/springhack/alxw_judge_core
-git clone https://github.com/springhack/Lo-runner
+# git clone https://github.com/springhack/Lo-runner
 
 # Compile Code And Install
 # cd Lo-runner
